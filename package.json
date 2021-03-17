@@ -1,6 +1,9 @@
 {
-  "name": "@work.club/server",
+  "name": "@bop.town/server",
   "version": "1.0.0",
+  "engines": {
+    "node": "12"
+  },
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon -r dotenv/config --watch '**/*.ts' --exec 'ts-node' src/index.ts"
