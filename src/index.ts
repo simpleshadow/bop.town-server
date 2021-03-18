@@ -25,8 +25,8 @@ export const startServer = () => {
 
     socket.broadcast.emit(SocketEvents.PEER_CONNECTED, { id: socket.id })
 
-    socket.on(SocketEvents.SEND_STATUS, ({ position }) => {
-      socket.broadcast.emit(SocketEvents.RECEIVED_PEER_STATUS, { id: socket.id, position })
+    socket.on(SocketEvents.SEND_STATUS, ({ color, name, position }) => {
+      socket.broadcast.emit(SocketEvents.RECEIVED_PEER_STATUS, { id: socket.id, color, name, position })
     })
 
     socket.on('disconnect', () => {

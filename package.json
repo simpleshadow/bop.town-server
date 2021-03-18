@@ -2,7 +2,7 @@
   "name": "@bop.town/server",
   "version": "1.0.0",
   "engines": {
-    "node": "12"
+    "node": "15"
   },
   "scripts": {
     "start": "ts-node src/index.ts",
